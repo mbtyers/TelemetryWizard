@@ -43,6 +43,7 @@ ui <- fluidPage(
                  # plotOutput("theplot", height="600px"),
                  # leafletOutput("theleaf", height="600px"),
                  uiOutput("theleafui"),
+                 htmlOutput("sayiftheresaproblem"),
                  h4("First rows of data table:"),
                  tableOutput("astable"),
                  # dataTableOutput("astable"),
@@ -156,18 +157,33 @@ server <- function(input, output, session) {
     if(input$newhead!="") {
       # if(!is.na(as.numeric(input$newhead))) {
       thenewhead <- strsplit(input$newhead, split=" +")
-      # thenewhead <- scan(input$newhead, what="")
       if(length(colnames(thetable)) != length(thenewhead[[1]])) {
-        stop(paste0("Length of the header row (", 
-                    length(thenewhead[[1]]),
-                    ") is different from the number of data columns (",
-                    length(colnames(thetable)),
-                    ") - Please add or remove whitespace as needed."))
+        # stop(paste0("Length of the header row (",
+        #             length(thenewhead[[1]]),
+        #             ") is different from the number of data columns (",
+        #             length(colnames(thetable)),
+        #             ") - Please add or remove whitespace as needed."))
+      } else {
+        colnames(thetable) <- thenewhead[[1]]
       }
-      colnames(thetable) <- thenewhead[[1]]
     }
     return(thetable)
   })
+  
+  output$sayiftheresaproblem <- renderText({
+    lhead <- ifelse(input$newhead!="",
+                    length(strsplit(input$newhead, split=" +")[[1]]),
+                    ncol(tableinput()))
+    lcol <- ncol(tableinput())
+    ifelse(lhead == lcol, "",
+           paste0("<font color=\"#FF0000\"><b>",
+                  "ERROR: Length of the header row (",
+                  lhead,
+                  ") is different from the number of data columns (",
+                  lcol,
+                  ") - Please add or remove whitespace as needed.", "</b></font>"))
+  })
+  
   # output$astable <- renderDataTable({
   #   req(input$file1)
   #   xx <- tableinput() #head(tableinput())
