@@ -1,0 +1,175 @@
+SRX1200 Data File Export
+
+Data File Header Section
+========================
+Product Configuration
+---------------------
+Receiver Model:           SRX1200-MD2
+Product SN:               MD020121
+Digital Board SN:         SRX12000451
+RF Board SN:              SRX8001902
+Start Frequency:          148.000MHz
+Bandwidth:                026.000MHz
+Installed Codesets:       Lotek3,Lotek4,Lotek5
+
+Main Program Firmware:    V1.4.1808.13  Thursday, March 17, 202215:19:38
+Slave Processor Firmware: V1.2.1591.14  Wednesday, March 2, 202215:45:09
+GPS Receiver:             AXN_1.30-0000-20170314
+
+1 Receiver Project(s) Found
+===========================
+Receiver Project #1
+-------------------
+Configuration Date/Time:      September 28, 202217:16:33
+
+Basic Scan Settings
+-------------------
+Site Code:          0000
+Scan Period:        14.0 sec
+Total Scan Time:    0 sec (disabled)
+Scan Time Align:    yes
+GPS Clock Enabled:  yes
+GPS Positions:      yes
+Enable TOA:         no
+Enable CRTO:        no
+
+Channel Settings - 1 defined
+----------------------------
+
+Index   En   Freq [MHz]  Type      Codeset   
+---------------------------------------------
+     1  yes     149.300  ID-Only   Lotek3    
+
+Antenna Configuration - Main Panel Antenna, Gain = 60
+-----------------------------------------------------
+
+Filter Settings
+---------------
+Noise Threshold:    10
+Echo Limit:         15.0 ms
+Pulse Width Filter: 2.0 ms (enabled)
+Maximum Deviation:  15.0(disabled)
+
+Sensor Configuration
+--------------------
+No sensors configured.
+
+All Detection Records
+---------------------
+
+Index   Date      Time        [uSec]     TagID/BPM  Freq [MHz]  Codeset   Antenna     Gain    RSSI      Latitude     Longitude
+------------------------------------------------------------------------------------------------------------------------------
+     1  09/28/22  17:16:45     50677            28     149.300  Lotek3    Main Panel    60     129      64.86180    -147.74092
+     2  09/29/22  12:41:56    276400           130     149.300  Lotek3    Main Panel    60     147      64.80105    -147.23952
+     3  09/29/22  12:41:59    777040           130     149.300  Lotek3    Main Panel    60     164      64.80128    -147.23948
+     4  09/29/22  12:48:34    432368           122     149.300  Lotek3    Main Panel    60     135      64.80809    -147.25822
+     5  09/29/22  12:57:02    705696            74     149.300  Lotek3    Main Panel    60     152      64.82630    -147.27960
+     6  09/29/22  12:57:06      6229            74     149.300  Lotek3    Main Panel    60     138      64.82648    -147.27997
+     7  09/29/22  12:59:03    972544            13     149.300  Lotek3    Main Panel    60     134      64.83242    -147.28663
+     8  09/29/22  13:31:22     44405            83     149.300  Lotek3    Main Panel    60     133      64.83668    -147.34031
+     9  09/29/22  13:44:22     45029            15     149.300  Lotek3    Main Panel    60     128      64.84437    -147.36180
+    10  09/29/22  13:44:25    445125            15     149.300  Lotek3    Main Panel    60     148      64.84430    -147.36187
+    11  09/29/22  13:44:28    845771            15     149.300  Lotek3    Main Panel    60     138      64.84428    -147.36191
+    12  09/29/22  13:44:35    647029            15     149.300  Lotek3    Main Panel    60     145      64.84422    -147.36198
+    13  09/29/22  13:44:39     47328            15     149.300  Lotek3    Main Panel    60     150      64.84420    -147.36199
+    14  09/29/22  13:44:42    447845            15     149.300  Lotek3    Main Panel    60     162      64.84417    -147.36201
+    15  09/29/22  13:44:45    848421            15     149.300  Lotek3    Main Panel    60     152      64.84415    -147.36202
+    16  09/29/22  13:45:09    652917            15     149.300  Lotek3    Main Panel    60     122      64.84412    -147.36190
+    17  09/29/22  13:47:08    671861            15     149.300  Lotek3    Main Panel    60     131      64.84452    -147.36178
+    18  09/29/22  13:47:12     72208            15     149.300  Lotek3    Main Panel    60     148      64.84432    -147.36196
+    19  09/29/22  13:47:15    472912            15     149.300  Lotek3    Main Panel    60     132      64.84411    -147.36235
+    20  09/29/22  14:11:10    947941            61     149.300  Lotek3    Main Panel    60     121      64.84765    -147.44894
+    21  09/29/22  14:11:14    147520            61     149.300  Lotek3    Main Panel    60     139      64.84743    -147.44906
+    22  09/29/22  14:11:17    348000            61     149.300  Lotek3    Main Panel    60     164      64.84719    -147.44942
+    23  09/29/22  14:11:20    548656            61     149.300  Lotek3    Main Panel    60     168      64.84707    -147.44972
+    24  09/29/22  14:11:23    748800            61     149.300  Lotek3    Main Panel    60     171      64.84701    -147.44998
+    25  09/29/22  14:11:26    949456            61     149.300  Lotek3    Main Panel    60     137      64.84700    -147.45015
+    26  09/29/22  14:13:21    986320           120     149.300  Lotek3    Main Panel    60     125      64.84883    -147.46220
+    27  09/29/22  14:13:25     86219           120     149.300  Lotek3    Main Panel    60     146      64.84886    -147.46272
+    28  09/29/22  14:13:28    186597           120     149.300  Lotek3    Main Panel    60     159      64.84892    -147.46323
+    29  09/29/22  14:13:31    287024           120     149.300  Lotek3    Main Panel    60     159      64.84900    -147.46374
+    30  09/29/22  14:13:34    387349           120     149.300  Lotek3    Main Panel    60     158      64.84905    -147.46443
+    31  09/29/22  14:14:12    238139            50     149.300  Lotek3    Main Panel    60     136      64.84703    -147.46810
+    32  09/29/22  14:14:22    140224            50     149.300  Lotek3    Main Panel    60     124      64.84630    -147.46861
+    33  09/29/22  14:14:25    440411            50     149.300  Lotek3    Main Panel    60     199      64.84600    -147.46857
+    34  09/29/22  14:44:29    250965            11     149.300  Lotek3    Main Panel    60     137      64.84248    -147.58299
+    35  09/29/22  14:44:32    251301            11     149.300  Lotek3    Main Panel    60     141      64.84241    -147.58313
+    36  09/29/22  14:44:35    251317            11     149.300  Lotek3    Main Panel    60     164      64.84230    -147.58326
+    37  09/29/22  14:44:38    251584            11     149.300  Lotek3    Main Panel    60     169      64.84216    -147.58332
+    38  09/29/22  14:45:53    256368            11     149.300  Lotek3    Main Panel    60     141      64.84177    -147.58333
+    39  09/29/22  14:45:59    256688            11     149.300  Lotek3    Main Panel    60     138      64.84180    -147.58335
+    40  09/29/22  14:46:02    256880            11     149.300  Lotek3    Main Panel    60     134      64.84183    -147.58335
+    41  09/29/22  14:46:05    257205            11     149.300  Lotek3    Main Panel    60     138      64.84190    -147.58336
+    42  09/29/22  14:46:08    257333            11     149.300  Lotek3    Main Panel    60     160      64.84193    -147.58335
+    43  09/29/22  14:46:11    257541            11     149.300  Lotek3    Main Panel    60     151      64.84197    -147.58334
+    44  09/29/22  14:46:14    257632            11     149.300  Lotek3    Main Panel    60     145      64.84202    -147.58333
+    45  09/29/22  14:46:17    257845            11     149.300  Lotek3    Main Panel    60     193      64.84206    -147.58333
+    46  09/29/22  14:46:20    258341            11     149.300  Lotek3    Main Panel    60     163      64.84211    -147.58332
+    47  09/29/22  14:48:43    837040            34     149.300  Lotek3    Main Panel    60     163      64.84698    -147.58716
+    48  09/29/22  14:50:50    291845            36     149.300  Lotek3    Main Panel    60     127      64.85061    -147.60552
+    49  09/29/22  14:55:24    727051            68     149.300  Lotek3    Main Panel    60     128      64.84450    -147.63432
+    50  09/29/22  14:55:28     27296            68     149.300  Lotek3    Main Panel    60     141      64.84464    -147.63477
+    51  09/29/22  14:55:31    327867            68     149.300  Lotek3    Main Panel    60     158      64.84486    -147.63528
+    52  09/29/22  14:55:34    628032            68     149.300  Lotek3    Main Panel    60     171      64.84504    -147.63561
+    53  09/29/22  14:55:37    928501            68     149.300  Lotek3    Main Panel    60     153      64.84523    -147.63589
+    54  09/29/22  15:25:06    965371           151     149.300  Lotek3    Main Panel    60     134      64.84746    -147.74248
+    55  09/29/22  15:25:10    165771           151     149.300  Lotek3    Main Panel    60     134      64.84726    -147.74313
+    56  09/29/22  15:31:21    317739            19     149.300  Lotek3    Main Panel    60     133      64.84300    -147.78278
+    57  09/29/22  15:31:24    517797            19     149.300  Lotek3    Main Panel    60     152      64.84284    -147.78312
+    58  09/29/22  15:31:27    718059            19     149.300  Lotek3    Main Panel    60     176      64.84265    -147.78340
+    59  09/29/22  15:34:51    331616            42     149.300  Lotek3    Main Panel    60     147      64.84420    -147.80074
+    60  09/29/22  15:37:08    511344            17     149.300  Lotek3    Main Panel    60     129      64.83972    -147.80587
+    61  09/29/22  15:37:11    511472            17     149.300  Lotek3    Main Panel    60     136      64.83992    -147.80611
+    62  09/29/22  15:37:14    511552            17     149.300  Lotek3    Main Panel    60     142      64.84012    -147.80633
+    63  09/29/22  15:37:17    511744            17     149.300  Lotek3    Main Panel    60     151      64.84034    -147.80647
+    64  09/29/22  15:37:20    511915            17     149.300  Lotek3    Main Panel    60     162      64.84056    -147.80656
+    65  09/29/22  15:43:01     88064            25     149.300  Lotek3    Main Panel    60     130      64.84000    -147.85134
+    66  09/29/22  15:43:04    288331            25     149.300  Lotek3    Main Panel    60     126      64.84000    -147.85113
+
+
+Battery Report
+--------------
+
+Index   Date      Time      Main [V] Lith [V]  GPS Antenna
+----------------------------------------------------------
+     1  09/29/22  11:49:33      9.01     4.32  Healthy
+     2  09/29/22  12:09:40      7.67     4.20  Healthy
+     3  09/29/22  12:29:49      7.63     4.20  Healthy
+     4  09/29/22  12:49:57      7.58     4.20  Healthy
+     5  09/29/22  13:10:06      7.54     4.20  Healthy
+     6  09/29/22  13:30:14      7.50     4.20  Healthy
+     7  09/29/22  13:50:23      7.50     4.20  Healthy
+     8  09/29/22  14:10:31      7.45     4.20  Healthy
+     9  09/29/22  14:30:40      7.45     4.20  Healthy
+    10  09/29/22  14:50:48      7.41     4.20  Healthy
+    11  09/29/22  15:10:57      7.41     4.20  Healthy
+    12  09/29/22  15:31:05      7.37     4.20  Healthy
+    13  09/29/22  15:51:14      7.37     4.20  Healthy
+    14  09/30/22  14:19:45      9.01     4.32  Healthy
+    15  09/30/22  14:22:19      9.01     4.33  Healthy
+
+User Update Reports
+-------------------
+
+Index   Date      Time      Mode              Event Description                Channel  Antenna     Gain  Freq [MHz]
+--------------------------------------------------------------------------------------------------------------------
+     1  09/28/22  17:16:33  CODE LOG          ENTER CODE LOG FROM KEYPAD             1  Main Panel    60     149.300
+
+System Event Reports
+--------------------
+
+Index   Date      Time      Mode              Event Description                Battery
+--------------------------------------------------------------------------------------
+     1  09/28/22  17:16:52  CODE LOG          POWER DOWN or BROWN OUT(SLEEP)        OK
+     2  09/29/22  11:49:32  CODE LOG          COLD START (FULL RESET)               OK
+     3  09/29/22  11:49:32  CODE LOG          RESUME CODE LOG AFTER RESET           OK
+     4  09/29/22  11:49:32  CODE LOG          WIFI ACCESS POINT DROPPED             OK
+     5  09/29/22  16:05:43  CODE LOG          POWER DOWN or BROWN OUT(SLEEP)        OK
+     6  09/30/22  14:19:44  CODE LOG          COLD START (FULL RESET)               OK
+     7  09/30/22  14:19:44  CODE LOG          RESUME CODE LOG AFTER RESET           OK
+     8  09/30/22  14:19:44  CODE LOG          WIFI ACCESS POINT DROPPED             OK
+     9  09/30/22  14:21:42  CODE LOG          CYCLED USB PROCESSES                  OK
+    10  09/30/22  14:22:13  CODE LOG          POWER DOWN or BROWN OUT(SLEEP)        OK
+    11  09/30/22  14:22:18  CODE LOG          COLD START (FULL RESET)               OK
+    12  09/30/22  14:22:18  CODE LOG          WIFI ACCESS POINT DROPPED             OK
+    13  09/30/22  14:22:18  CODE LOG          RESUME CODE LOG AFTER RESET           OK
