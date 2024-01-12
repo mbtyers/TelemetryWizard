@@ -157,6 +157,13 @@ server <- function(input, output, session) {
       # if(!is.na(as.numeric(input$newhead))) {
       thenewhead <- strsplit(input$newhead, split=" +")
       # thenewhead <- scan(input$newhead, what="")
+      if(length(colnames(thetable)) != length(thenewhead[[1]])) {
+        stop(paste0("Length of the header row (", 
+                    length(thenewhead[[1]]),
+                    ") is different from the number of data columns (",
+                    length(colnames(thetable)),
+                    ") - Please add or remove whitespace as needed."))
+      }
       colnames(thetable) <- thenewhead[[1]]
     }
     return(thetable)
