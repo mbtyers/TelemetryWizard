@@ -1,10 +1,6 @@
-# if(!require(ggmap)) install.packages("ggmap", dependencies=T)
-# if(!require(tmaptools)) install.packages("tmaptools", dependencies=T)
-if(!require(shiny)) install.packages("shiny", dependencies=T)
-if(!require(leaflet)) install.packages("leaflet", dependencies=T)
+# if(!require(shiny)) install.packages("shiny", dependencies=T)
+# if(!require(leaflet)) install.packages("leaflet", dependencies=T)
 
-# library(ggmap)
-# library(tmaptools)
 library(shiny)
 library(leaflet)
 
@@ -17,6 +13,8 @@ ui <- fluidPage(
   # Sidebar layout with input and output definitions ----
   tabsetPanel(
     tabPanel("Data Input",
+             h6("For an example dataset, copy-paste the following link when using the file selection window:"),
+             h6("https://raw.githubusercontent.com/mbtyers/TelemetryWizard/main/ExampleData/7-17-22%20WING.TXT"),
              sidebarLayout(
                
                # Sidebar panel for inputs ----
@@ -86,6 +84,7 @@ ui <- fluidPage(
                  actionButton("storecomment","Store Comment"),
                  hr(),
                  h4("Download data"),
+                 textInput("fileID", "File ID (optional)",value=""),
                  downloadButton("allDL","Download All records..."),
                  downloadButton("selDL","Download Selected records...")
                ),
@@ -450,11 +449,11 @@ server <- function(input, output, session) {
   DLall <- reactive(cbind(DATA_ROW=datamat()$row, SELECTED=sel(),ID=ID(), tableinput(), COMMENT=comment()))
   DLsel <- reactive(DLall()[DLall()$SELECTED,])
   output$allDL <- downloadHandler(
-    filename=function() paste0("AllRecords_",Sys.Date(),".csv"),
+    filename=function() paste0(input$fileID,"AllRecords_read",Sys.Date(),".csv"),
     content=function(file) write.csv(DLall(), file)
   )
   output$selDL <- downloadHandler(
-    filename=function() paste0("SelectedRecords_",Sys.Date(),".csv"),
+    filename=function() paste0(input$fileID,"SelectedRecords_read",Sys.Date(),".csv"),
     content=function(file) write.csv(DLsel(), file)
   )
 }
