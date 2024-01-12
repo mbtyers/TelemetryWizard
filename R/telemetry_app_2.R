@@ -12,7 +12,7 @@ ui <- fluidPage(
   
   # Sidebar layout with input and output definitions ----
   tabsetPanel(
-    tabPanel("Data Input",
+    tabPanel("Data Import",
              h6("For an example dataset, copy-paste the following link when using the file selection window:"),
              h6("https://raw.githubusercontent.com/mbtyers/TelemetryWizard/main/ExampleData/7-17-22%20WING.TXT"),
              sidebarLayout(
